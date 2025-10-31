@@ -1,0 +1,35 @@
+# GHC
+dist
+dist-*
+cabal-dev
+*.o
+*.hi
+*.chi
+*.chs.h
+*.dyn_o
+*.dyn_hi
+.hpc
+.hsenv
+.cabal-sandbox
+cabal.sandbox.config
+*.prof
+*.aux
+*.hp
+*.ps
+*.pdf
+
+# Stack
+.stack-work/
+.stack-work
+.stack.yaml.lock
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+

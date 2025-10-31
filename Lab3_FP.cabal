@@ -1,0 +1,16 @@
+cabal-version:      3.0
+name:               Lab3_FP
+version:            0.1.0.0
+synopsis:           Lab3_FP
+description:        Lab3_FP
+license:            MIT
+author:             
+maintainer:         
+build-type:         Simple
+
+executable Lab3_FP
+  main-is:          Main.hs
+  hs-source-dirs:   src
+  default-language: Haskell2010
+  build-depends:    base >= 4.14 && < 5
+
