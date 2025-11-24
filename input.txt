@@ -1,0 +1,27 @@
+Chapter 1. Introduction to programming
+
+In this chapter we discuss basic ideas about programs, data, and algorithms.
+A string is a sequence of characters stored in memory.
+Sometimes we need to analyze such strings and search for special patterns.
+One interesting pattern is called a palindrome.
+A palindrome reads the same from left to right and from right to left.
+Classic examples are racecar, level, rotor, madam, civic and radar.
+These words are often used in programming exercises about strings.
+
+Chapter 2. Working with strings
+
+When we work with text data, we usually read input from a file or from the keyboard.
+Before processing the text, we often normalize it by trimming extra spaces and tabs.
+For example, the text may contain    multiple    spaces,   tabs\t\tand empty   lines.
+Normalization makes the text easier to handle for our algorithms.
+After normalization, it is simpler to search for the longest palindromic substring.
+
+Chapter 3. Palindrome examples
+
+Sometimes a palindrome is not just a single word but a whole phrase.
+A famous example is: a man a plan a canal panama.
+If we ignore spaces and letter case, this phrase is a palindrome.
+In this file we also include a short artificial example aba inside a sentence,
+so that we can easily test whether our implementation finds it.
+The goal of this assignment is to read the text from the file,
+normalize whitespace, and then find the longest palindromic substring.
