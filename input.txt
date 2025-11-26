@@ -1,27 +1,31 @@
-Chapter 1. Introduction to programming
+Chapter 1. Text processing in programming
 
-In this chapter we discuss basic ideas about programs, data, and algorithms.
-A string is a sequence of characters stored in memory.
-Sometimes we need to analyze such strings and search for special patterns.
-One interesting pattern is called a palindrome.
-A palindrome reads the same from left to right and from right to left.
-Classic examples are racecar, level, rotor, madam, civic and radar.
-These words are often used in programming exercises about strings.
+In real projects, developers often need to analyze long strings of text.
+Sometimes these strings contain patterns like level, rotor, or civic that are
+easy to recognize because they read the same forwards and backwards.
+For more interesting tests, we can also construct multi-word palindromes.
 
-Chapter 2. Working with strings
+For example, the sequence a b a is a simple palindrome that includes spaces.
+An even longer artificial example is abc cba, where the space is part of the
+pattern and the whole fragment still reads the same in both directions.
+In practice, such exact patterns are rare, but they are very useful for testing.
 
-When we work with text data, we usually read input from a file or from the keyboard.
-Before processing the text, we often normalize it by trimming extra spaces and tabs.
-For example, the text may contain    multiple    spaces,   tabs\t\tand empty   lines.
-Normalization makes the text easier to handle for our algorithms.
-After normalization, it is simpler to search for the longest palindromic substring.
+Chapter 2. Whitespace and formatting
 
-Chapter 3. Palindrome examples
+Input files may contain    multiple   spaces, 		tabs, and   irregular
+line breaks. Before we search for palindromes, we usually normalize the text
+by replacing any sequence of whitespace characters with a single space.
+This makes patterns like a    b    a much easier to detect, because after
+normalization they become a b a, which is clearly a palindrome.
 
-Sometimes a palindrome is not just a single word but a whole phrase.
-A famous example is: a man a plan a canal panama.
-If we ignore spaces and letter case, this phrase is a palindrome.
-In this file we also include a short artificial example aba inside a sentence,
-so that we can easily test whether our implementation finds it.
-The goal of this assignment is to read the text from the file,
-normalize whitespace, and then find the longest palindromic substring.
+Sometimes palindromes appear at the edges of words or sentences.
+For instance, in the phrase "abcddcba is here", the substring abcddcba
+is a long even-length palindrome. We can also hide palindromes in the
+middle of a sentence, such as: here we see the fragment abccba inside this line.
+
+Chapter 3. Summary and experiments
+
+This sample input is long enough to test reading from a file, whitespace
+normalization, and palindrome detection for both single words and phrases.
+Your program should be able to find the longest palindromic substring
+and also list all palindromic substrings that appear in the normalized text.
